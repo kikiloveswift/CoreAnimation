@@ -51,6 +51,7 @@
 		FC42739C1DC3218700743E06 /* CoreAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4273A01DC3218700743E06 /* CoreAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationUITests.m; sourceTree = "<group>"; };
 		FC4273A21DC3218700743E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCDF20F11DC326BE00C03849 /* config.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 			children = (
 				FC42737E1DC3218700743E06 /* AppDelegate.h */,
 				FC42737F1DC3218700743E06 /* AppDelegate.m */,
+				FCDF20F11DC326BE00C03849 /* config.pch */,
 				FC4273811DC3218700743E06 /* ViewController.h */,
 				FC4273821DC3218700743E06 /* ViewController.m */,
 				FC4273841DC3218700743E06 /* Main.storyboard */,
@@ -428,7 +430,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 628LRYYF8F;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CoreAnimation/config.pch";
 				INFOPLIST_FILE = CoreAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.CoreAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,7 +444,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 628LRYYF8F;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CoreAnimation/config.pch";
 				INFOPLIST_FILE = CoreAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.konglee.CoreAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +522,7 @@
 				FC4273A71DC3218700743E06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC4273A81DC3218700743E06 /* Build configuration list for PBXNativeTarget "CoreAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +531,7 @@
 				FC4273AA1DC3218700743E06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC4273AB1DC3218700743E06 /* Build configuration list for PBXNativeTarget "CoreAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +540,7 @@
 				FC4273AD1DC3218700743E06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

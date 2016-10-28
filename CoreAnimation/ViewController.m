@@ -14,16 +14,24 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self initUI];
+    
+   
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initUI
+{
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake((KWidth - 300)/2, 100, 300, 400)];
+    [self.view addSubview:view];
+    UIImage *image = [UIImage imageNamed:@"01.jpg"];
+//    CALayer *layer = [CALayer layer];
+    view.layer.contents = (__bridge id)image.CGImage;
+    view.layer.contentsGravity = kCAGravityResizeAspect;
 }
+
 
 
 @end
